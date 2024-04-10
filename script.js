@@ -4,7 +4,8 @@ const fileInput = document.querySelector('input[type="file"');
 const context = canvas.getContext("2d");
 
 
-const grayRamp = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. ";
+// const grayRamp = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,\"^`'. ";
+const grayRamp = "@=+~-,. ";
 const rampLength = grayRamp.length;
 
 // the grayScale value is an integer ranging from 0 (black) to 255 (white)
@@ -12,14 +13,6 @@ const getCharacterForGrayScale = grayScale => grayRamp[Math.ceil(((rampLength - 
 
 
 const asciiImage = document.querySelector("pre#ascii");
-
-// const drawAscii = grayScales => {
-//   const ascii = grayScales.reduce((asciiImage, grayScale) => {
-//     return asciiImage + getCharacterForGrayScale(grayScale);
-//   }, "");
-
-//   asciiImage.textContent = ascii;
-// };
 
 const drawAscii = (grayScales, width) => {
     const ascii = grayScales.reduce((asciiImage, grayScale, index) => {
