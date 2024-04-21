@@ -6,25 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ascii Art Converter</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .preSection {
-            font-size: 2px;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 </head>
 
 <body>
     <h1>Ascii Art Converter</h1>
-    <p>
+    <p id="imageViwer">
         <input type="file" name="picture" accept="image/*" />
     </p>
-    <canvas id="preview"></canvas>
+
+    <canvas class="canvasPreSection" id="preview"></canvas>
     <pre class="preSection" id="ascii"></pre>
     <script src="./script.js"></script>
 </body>

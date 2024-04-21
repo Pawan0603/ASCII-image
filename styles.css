@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvasPreSection {
+    position: absolute;
+    top: -10000rem;
+}
+
+.preSection {
+    background-color: white;
+    font-size: 20px;
+    /* position: absolute;
+    right: -10000rem; */
+    margin-top: 20rem;
+    margin-left: 500rem;
+}
+
+.imageViwer {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#downloadbtnbox{
+    margin: 3rem 0 0 0;
+}
