@@ -11,6 +11,7 @@ const downloadNow = async () => {
     // Div element ko select karen
     const element = document.getElementById("ascii");
     console.log(element)
+    document.getElementById("downloadbtnbox").innerHTML = `<h3>Plz wait for downloading...</h3>`
 
     // html2canvas ka istemal karke screenshot banaen
     html2canvas(element, {
